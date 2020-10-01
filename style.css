@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+h2{
+    color: #FA5B35;
+}
+p{
+    text-align: center;
+}
+.btn{
+    color:white;
+    background: #FA5B35;
+    padding: 7px;
+    border-radius: 20%;
+    cursor: pointer;
+    border: none;
+    margin-left: 20px;
+}
+.rate{
+    color: #FA5B35;
+    font-size:13px;
+    font-weight: 500;
+
+
+}
+.swap-rate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.image-money{
+width:150px;
+}
+.currencies{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currencies select{
+    padding:10px 10px 10px 10px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 2 px solid #dedede;
+    background: transparent;
+    background-image: url('img/arrow.png');
+    background-size: 10px;
+    background-position: right 2px top 50%;
+    background-repeat: no-repeat;
+
+}
+.currencies select:focus{
+    outline: none;
+}
+
+.currencies input{
+    border: 0;
+    background: transparent;
+    text-align: right;
+    font-size: 25px;
+}
+
+.currencies input:focus{
+    outline: none;
+}
+
+@media (max-width:600px){
+    .currencies input{
+        width:200px;
+    }
+}
